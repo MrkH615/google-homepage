@@ -1,0 +1,33 @@
+/* stylesheet for Mark's The Odin Project Google page project */
+li {
+    list-style-type: none;
+    font: 13px Arial;
+   
+}
+
+.left {
+  float: left;
+  margin-right: 1em;
+}
+
+.right {
+   float: right; /* list items in wrong order - how? */
+  /* text-align: right; 
+  list items are in the right order, but to the left of the page*/
+  margin-left: 1em;
+}
+
+.bottom-navigation {
+    position: absolute;
+    bottom: 0;
+}
+
+#center-logo {
+    display: block;
+    margin: auto;
+    width: 50%;
+    top: auto;
+    /* left: 50%; */
+    bottom: auto; /* 50% */
+    /* position: absolute; */
+}

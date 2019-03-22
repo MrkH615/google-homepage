@@ -22,12 +22,24 @@ li {
     bottom: 0;
 }
 
+#logo-conatiner {
+  position: relative;
+}
+
 #center-logo {
+  width: 272px;
+  height: 42px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin:  -136px 0 0 -120px;
+}
+/* #center-logo {
     display: block;
     margin: auto;
     width: 50%;
     top: auto;
-    /* left: 50%; */
-    bottom: auto; /* 50% */
-    /* position: absolute; */
-}
+    left: 50%; 
+    bottom: auto;  50% 
+    position: absolute; 
+} */

@@ -22,7 +22,37 @@ li {
     bottom: 0;
 }
 
-#logo-conatiner {
+#center-conatiner {
+  position: relative;
+}
+
+#center {
+  width: 516px;
+  height: 242px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin:  -136px 0 0 -120px;
+}
+
+#search {
+
+  width: 516px;
+  height: 36px;
+  margin-bottom: 10px;
+}
+
+#g-search {
+  width: 116px;
+  height: 30px;
+}
+
+#lucky {
+   width: 123px;
+  height: 30px;
+}
+
+/* #logo-conatiner {
   position: relative;
 }
 
@@ -40,6 +70,6 @@ li {
     width: 50%;
     top: auto;
     left: 50%; 
-    bottom: auto;  50% 
+    bottom: auto; 50% **** auto OR 50%    *******
     position: absolute; 
 } */

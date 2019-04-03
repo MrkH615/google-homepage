@@ -14,18 +14,10 @@ li {
 }
 
 .right {
-   float: right; /* list items in wrong order - how? */
-   /* last item in html is floated last, first item in 
-   html is floated first */
-  /* text-align: right; 
-  list items are in the right order, but to the left of the page*/
+   float: right; 
   margin-left: 1em;
 }
 
-
-/* no top-navigation class in style.css  
- * adding .top-navigation with similar 
- * styling to .bottom-navigation broke formatting at top of page */
    
  .top-navigation {
    display: inline;

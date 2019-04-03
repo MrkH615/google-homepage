@@ -1,7 +1,10 @@
 /* stylesheet for Mark's The Odin Project Google page project */
+
+
 li {
     list-style-type: none;
     font: 13px Arial;
+    display: inline;
    
 }
 
@@ -12,10 +15,21 @@ li {
 
 .right {
    float: right; /* list items in wrong order - how? */
+   /* last item in html is floated last, first item in 
+   html is floated first */
   /* text-align: right; 
   list items are in the right order, but to the left of the page*/
   margin-left: 1em;
 }
+
+
+/* no top-navigation class in style.css  
+ * adding .top-navigation with similar 
+ * styling to .bottom-navigation broke formatting at top of page */
+   
+ .top-navigation {
+   display: inline;
+ }
 
 .bottom-navigation {
     position: absolute;
@@ -35,6 +49,11 @@ li {
   margin:  -136px 0 0 -120px;
 }
 
+#logo-container {
+ margin-left: 126px;
+ margin-right: 126px;
+}
+
 #search {
 
   width: 516px;
@@ -42,9 +61,16 @@ li {
   margin-bottom: 10px;
 }
 
+#search-buttons-container {
+  display: inline;
+  margin-left: 140.5px;
+  margin-right: 140.5px;
+}
+
 #g-search {
   width: 116px;
   height: 30px;
+ 
 }
 
 #lucky {

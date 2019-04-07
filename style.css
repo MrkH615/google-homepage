@@ -1,5 +1,10 @@
 /* stylesheet for Mark's The Odin Project Google page project */
 
+
+body{
+  margin-left: 20px;  /*works, but nav div at bottom of page starts further left */
+}
+
 li {
     list-style-type: none;
     font: 13px Arial;
@@ -7,9 +12,6 @@ li {
     margin-right: 7px;
 }
 
-#top-left-whitespace {
-  width: 100px; /*no effect */
-}
 
 #app-buttons {  /*applied to img, doesn't seem to do anything*/
   display: inline-block;
@@ -93,7 +95,14 @@ border: none;
   height: 30px;
 }
 
-/* #clear{
+/*
+#clear{
   clear: both;
-}  brings bottom left to left edge of screen and bottom right list past right edge of screen, kills
+}  /*brings bottom left in line with top left and bottom right list past right edge of screen, kills
 inline for bottom right */
+
+/*
+.right .bottom-navigation {
+  display: inline; /* no effect 
+}
+*/

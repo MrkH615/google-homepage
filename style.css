@@ -1,14 +1,14 @@
 /* stylesheet for Mark's The Odin Project Google page project */
 
-
-
-
 li {
     list-style-type: none;
     font: 13px Arial;
     display: inline;
     margin-right: 7px;
-   
+}
+
+#top-left-whitespace {
+  width: 100px; /*no effect */
 }
 
 #app-buttons {  /*applied to img, doesn't seem to do anything*/
@@ -28,7 +28,8 @@ li {
 }
 
    
- .top-navigation {
+ .top-navigation { 
+   /* margin-left: 10px;  no effect */
    position: relative;
    display: inline;
    top: 20px;
@@ -40,11 +41,13 @@ li {
 }
 
 #sign-in {
-height: 40px; /* not sure if this is working*/
+height: 40px; 
 width: 69px;
 color: white;
+font-weight: 800;
+font-size: 12px;
 background-color: blue; 
-padding: 10px;
+padding: 10px 0;
 border: none;
 }
 
@@ -90,3 +93,7 @@ border: none;
   height: 30px;
 }
 
+/* #clear{
+  clear: both;
+}  brings bottom left to left edge of screen and bottom right list past right edge of screen, kills
+inline for bottom right */

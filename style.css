@@ -2,7 +2,7 @@
 
 
 body{
-  margin-left: 20px;  /*works, but nav div at bottom of page starts further left */
+  margin-left: 20px;  /*works, but nav div at bottom of page starts further right */
 }
 
 li {
@@ -31,14 +31,15 @@ li {
 
    
  .top-navigation { 
-   /* margin-left: 10px;  no effect */
+  
    position: relative;
    display: inline;
    top: 20px;
  }
 
 .bottom-navigation {
-    position: absolute;
+    position: absolute;  /* position: relative bring bottom elements to top of screen,
+                            position: absolute brings them to the bottom of the screen */ 
     bottom: 0;
 }
 
@@ -94,6 +95,29 @@ border: none;
    width: 123px;
   height: 30px;
 }
+
+.bottom-container {
+  position: relative;
+}
+
+
+/*  
+
+/* #clear::after and #inline  moved bottom text more to left and fixed formatting of text at bottom 
+right of screen, but bottom left text still not aligned with top left text 
+
+#clear::after {
+content: "";
+display: block;
+clear: both;
+}
+
+#inline: {
+display: inline;
+}
+
+*/
+
 
 /*
 #clear{

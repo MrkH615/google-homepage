@@ -2,7 +2,7 @@
 
 
 body{
-  margin-left: 20px;  /*works, but nav div at bottom of page starts further right */
+  margin-left: 20px;  /* nav div at bottom of page starts further right */
 }
 
 li {
@@ -100,33 +100,14 @@ border: none;
   position: relative;
 }
 
+/* 
+* This aligned bottom left text with top left text, but also moved bottom right text
+ past right edge of screen, put a scrollbar at bottom of screen and killed
+inline formatting for bottom right
 
-/*  
-
-/* #clear::after and #inline  moved bottom text more to left and fixed formatting of text at bottom 
-right of screen, but bottom left text still not aligned with top left text 
-
-#clear::after {
+.clearfix::after {
 content: "";
 display: block;
 clear: both;
-}
-
-#inline: {
-display: inline;
-}
-
-*/
-
-
-/*
-#clear{
-  clear: both;
-}  /*brings bottom left in line with top left and bottom right list past right edge of screen, kills
-inline for bottom right */
-
-/*
-.right .bottom-navigation {
-  display: inline; /* no effect 
 }
 */

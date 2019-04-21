@@ -2,7 +2,8 @@
 
 
 body{
-  margin-left: 20px;  /* nav div at bottom of page starts further right */
+  margin-left: 20px;  
+ /* overflow: hidden;   hides bottom scrollbar from clearfix, bottom right menu still offscreen */
 }
 
 li {
@@ -41,6 +42,7 @@ li {
     position: absolute;  /* position: relative bring bottom elements to top of screen,
                             position: absolute brings them to the bottom of the screen */ 
     bottom: 0;
+   
 }
 
 #sign-in {
@@ -100,14 +102,3 @@ border: none;
   position: relative;
 }
 
-/* 
-* This aligned bottom left text with top left text, but also moved bottom right text
- past right edge of screen, put a scrollbar at bottom of screen and killed
-inline formatting for bottom right
-
-.clearfix::after {
-content: "";
-display: block;
-clear: both;
-}
-*/

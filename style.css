@@ -23,8 +23,8 @@ li {
 }
 
 .left {
-  float: left;
-  margin-left: 20px;  
+  float: left; 
+  padding-left: 2.3em;
   /*margin-right: 1em;*/
 }
 
@@ -45,6 +45,22 @@ li {
   margin-top: 10px;
 }
 
+#country {
+  position: fixed;
+  bottom: 38px;
+  left: 0;
+  background-color:  rgb(236, 236, 236); 
+  border: 1px solid rgb(226, 226, 226);
+  width: 98%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 2.3em;
+  overflow: hidden; 
+  display: inline-block;
+  vertical-align: middle;
+  font: 15px;
+}
+
 .bottom-navigation {
     position: absolute;  /* position: relative bring bottom elements to top of screen,
                             position: absolute brings them to the bottom of the screen */ 
@@ -55,7 +71,7 @@ li {
     overflow: hidden;  
     padding-top: 20px;
     margin-left: 0;
-    border-top: 1px solid rgb(226, 226, 226);
+    border: 1px solid rgb(226, 226, 226);
     padding-right: 1.75em; /*27px;*/
 }
 
@@ -103,17 +119,29 @@ vertical-align: middle;
   display: inline;
   margin-left: 140.5px;
   margin-right: 140.5px;
+  margin-bottom: 10px;
 }
 
 #g-search {
   width: 116px;
   height: 30px;
- 
+  margin-bottom: 10px;
 }
 
 #lucky {
    width: 123px;
   height: 30px;
+  margin-bottom: 10px;
+}
+
+#language {
+width: 162px;
+height: 28px;
+margin-left: 158px;
+}
+
+#french {
+color: blue;
 }
 
 

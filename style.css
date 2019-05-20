@@ -1,15 +1,10 @@
 /* stylesheet for Mark's The Odin Project Google page project */
 
-
+/*
 body{
   margin-left: 20px;  
 }
-
-
-img {
- /* margin-top: 5px;
-  margin-bottom: 5px; */
-}
+*/
 
 li {
     list-style-type: none;
@@ -19,35 +14,49 @@ li {
 }
 
 
-#app-buttons {  /*applied to img, doesn't seem to do anything*/
+#app-buttons {  
   display: inline-block;
   position: relative;
-  top: 15; 
+  vertical-align: middle;
+  /*width: 25%;
+  height: 25%; */
 }
 
 .left {
   float: left;
-  margin-right: 1em;
+  margin-left: 20px;  
+  /*margin-right: 1em;*/
 }
 
 .right {
   float: right; 
-  margin-left: 1em;
+
+  /*margin-left: 1em;*/
 }
 
    
  .top-navigation { 
-  
    position: relative;
    display: inline;
    top: 20px;
  }
 
+.top-navigation .left ul {
+  margin-top: 10px;
+}
+
 .bottom-navigation {
     position: absolute;  /* position: relative bring bottom elements to top of screen,
                             position: absolute brings them to the bottom of the screen */ 
     bottom: 0;
-   
+    background-color:  rgb(236, 236, 236); 
+    /*background-color: rgb(145, 141, 141);*/
+    width: 98%;
+    overflow: hidden;  
+    padding-top: 20px;
+    margin-left: 0;
+    border-top: 1px solid rgb(226, 226, 226);
+    padding-right: 1.75em; /*27px;*/
 }
 
 #sign-in {
@@ -58,7 +67,11 @@ font-weight: 800;
 font-size: 12px;
 background-color: blue; 
 padding: 10px 0;
+margin-left: 5px;
+margin-top: 5px;
 border: none;
+display: inline;
+vertical-align: middle;
 }
 
 #center-conatiner {
@@ -103,7 +116,12 @@ border: none;
   height: 30px;
 }
 
-.bottom-container {
-  position: relative;
-}
 
+#bottom-background {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(145, 141, 141);
+  height: 15px;
+  width: auto;
+}

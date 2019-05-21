@@ -62,17 +62,15 @@ li {
 }
 
 .bottom-navigation {
-    position: absolute;  /* position: relative bring bottom elements to top of screen,
-                            position: absolute brings them to the bottom of the screen */ 
+    position: absolute;   
     bottom: 0;
     background-color:  rgb(236, 236, 236); 
-    /*background-color: rgb(145, 141, 141);*/
     width: 98%;
     overflow: hidden;  
     padding-top: 20px;
     margin-left: 0;
     border: 1px solid rgb(226, 226, 226);
-    padding-right: 1.75em; /*27px;*/
+    padding-right: 1.75em; 
 }
 
 #sign-in {
@@ -109,7 +107,6 @@ vertical-align: middle;
 }
 
 #search {
-
   width: 516px;
   height: 36px;
   margin-bottom: 10px;

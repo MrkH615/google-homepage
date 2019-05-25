@@ -1,5 +1,6 @@
 # google-homepage
 HTML/CSS project for The Odin Project - Web Development 101
+
 Made on a 13-inch MacBook Air and viewed in Firefox.  
 
 What I've learned:

@@ -1,16 +1,18 @@
 /* stylesheet for Mark's The Odin Project Google page project */
 
-/*
-body{
-  margin-left: 20px;  
+#main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-*/
+
+ul {
+  list-style: none;
+}
 
 li {
-    list-style-type: none;
-    font: 13px Arial;
-    display: inline;
-    margin-right: 7px;
+  display: inline;
 }
 
 
@@ -23,27 +25,28 @@ li {
 }
 
 .left {
-  float: left; 
-  padding-left: 2.3em;
-  /*margin-right: 1em;*/
+  
 }
 
 .right {
-  float: right; 
-
-  /*margin-left: 1em;*/
+ 
 }
 
-   
- .top-navigation { 
-   position: relative;
-   display: inline;
-   top: 20px;
- }
-
-.top-navigation .left ul {
-  margin-top: 10px;
+#center {
+  position: relative;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 50%;
 }
+
+#logo-container {
+ margin-left: 126px;
+ margin-right: 126px;
+} 
+
 
 #country {
   position: fixed;
@@ -92,34 +95,19 @@ vertical-align: middle;
   position: relative;
 }
 
-#center {
-  width: 516px;
-  height: 242px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin:  -136px 0 0 -300px; 
+#search-box {
+  width: 100%;
+  align-items: center;
 }
 
-#logo-container {
- margin-left: 126px;
- margin-right: 126px;
-}
 
 #search {
-  width: 516px;
-  height: 36px;
-  margin-bottom: 10px;
+  display: block;
+  width: 100%;
   border-radius: 40px;
   border-color: rgb (226, 226, 226);
 }
 
-#search-buttons-container {
-  display: inline;
-  margin-left: 140.5px;
-  margin-right: 140.5px;
-  margin-bottom: 10px;
-}
 
 #g-search {
   width: 116px;

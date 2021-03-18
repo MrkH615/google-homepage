@@ -1,64 +1,62 @@
 <!DOCTYPE html>
 <html>
   <head> 
+    <meta charset = 'utf-8'>
+    <meta name = 'viewport' content = 'width = device-width'>
     <title>Mark's Google page for the Odin Project</title>
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- tested on a 13-inch MacBook Air-->
   </head>
   <body>
+    <div id = 'main-container'>
+     
 
-      <nav class="top-navigation">
-
-          <div class="left"> 
-                  <ul style="margin-top: 10px;">
+                  <ul class = "top">
                     <li>About </li>
                     <li>Store </li>
-                  </ul> 
-              </div>   
               
-              <div class="right">     
-                  <ul>
                     <li>Gmail </li>
                     <li>Images </li>
                     <li>  <img id="app-buttons" src="google-app-buttons.png"> </li>
                     <li> <button id="sign-in">Sign in</button> </li>
                   </ul>
-               </div> 
-      </nav>         
+               
               
-      <div id="center-container">
+              
+      
         <div id="center">
           <div id="logo-container">
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo"/>
           </div>
-          <input id="search"  type="text"> <br>
-          <div id="search-buttons-container">
-            <button id="g-search">Google Search</button>
-            <button id="lucky">I'm Feeling Lucky</button>
+          <div id = 'search-box'>
+            <form>
+            <input id="search" name = 'search' type="search"> 
+            <div id="search-buttons-container">
+              <button type = 'submit' id="g-search">Google Search</button>
+              <button type = 'submit' id="lucky">I'm Feeling Lucky</button>
+            </div>
+          </form>
           </div>
-          <span id="language">Google offered in: <span id="french">Français</span></div>
+         <!--  <span id="language">Google offered in: <span id="french">Français</span></div>-->
         </div>
-     </div>
+     
 
-     <div id="country" class="left">Canada</div>
+    <!-- <div id="country" class="left">Canada</div>-->
 
-     <nav class="bottom-navigation">
-            <div class="left">
-              <ul>
+     <ul class="bottom">
+           
+              
                <li>Advertising</li>
                <li>Business</li>
-              </ul>
-            </div>
+              
        
-            <div class="right">
-              <ul>
+           
                   <li>Privacy</li>
                   <li>Terms</li>
                   <li>Settings</li> 
               </ul>
-           </div>
-     </nav>
-         
+           
+    </div>       
   </body>
  </html>   

@@ -9,6 +9,7 @@
 
 ul {
   list-style: none;
+  width: 100%;
 }
 
 li {
@@ -25,11 +26,11 @@ li {
 }
 
 .left {
-  
+ 
 }
 
 .right {
- 
+  justify-self: end;
 }
 
 #center {
@@ -42,10 +43,11 @@ li {
   width: 50%;
 }
 
-#logo-container {
- margin-left: 126px;
- margin-right: 126px;
-} 
+
+
+#button-container {
+  text-align: center;
+}
 
 
 #country {
@@ -143,3 +145,9 @@ font: inherit;
   height: 15px;
   width: auto;
 }
+
+
+#logo-container {
+  margin-left: 126px;
+  margin-right: 126px;
+ } 

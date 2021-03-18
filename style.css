@@ -7,6 +7,12 @@
   justify-content: space-between;
 }
 
+.top{
+  display: flex;
+  justify-content: space-between;
+}
+
+
 ul {
   list-style: none;
   width: 100%;
@@ -29,9 +35,10 @@ li {
  
 }
 
+/*
 .right {
   justify-self: end;
-}
+} */
 
 #center {
   position: relative;
@@ -47,6 +54,12 @@ li {
 
 #button-container {
   text-align: center;
+}
+
+.bottom {
+  
+  display: flex;
+  justify-content: space-between;
 }
 
 

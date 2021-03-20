@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 li {
@@ -69,22 +70,25 @@ li {
   justify-content: space-between;
 }
 
-
+#country {
+  padding-left: .9rem;
+}
+/*
 #country {
   position: fixed;
   bottom: 1rem;
   padding-left: .75rem;
   background-color:  inherit;
  /* border: 1px solid rgb(226, 226, 226);*/
-  width: inherit;
+  /*width: inherit;
   padding-top: .5rem;
   padding-bottom: .5rem;
   /*padding-left: 2.3em;*/
-  overflow: hidden; 
+ /* overflow: hidden; 
   display: inline-block;
   /*! vertical-align: middle; */
   /*font: 15px;*/
-}
+/*}*/
 
 .lower {
   background-color:  rgb(236, 236, 236); 

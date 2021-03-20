@@ -1,6 +1,8 @@
 /* stylesheet for Mark's The Odin Project Google page project */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 #main-container {
+  font-family: 'Roboto', sans-serif;
   height: 100vh;
   display: flex;
   flex-direction: column;

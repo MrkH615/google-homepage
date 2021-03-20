@@ -32,13 +32,13 @@ li {
 }
 
 .left {
- 
+ margin-left: 2rem;
 }
 
-/*
+
 .right {
-  justify-self: end;
-} */
+  margin-right: 2rem;
+} 
 
 #center {
   position: relative;
@@ -72,10 +72,10 @@ li {
   width: 98%;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 2.3em;
+  /*padding-left: 2.3em;*/
   overflow: hidden; 
   display: inline-block;
-  vertical-align: middle;
+  /*! vertical-align: middle; */
   font: 15px;
 }
 

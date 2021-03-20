@@ -3,10 +3,15 @@
 
 #main-container {
   font-family: 'Roboto', sans-serif;
-  height: 100vh;
+  font-size: 1vw;
+  height: 98vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+li {
+  margin-left: .75rem;  
 }
 
 .top{
@@ -67,18 +72,24 @@ li {
 
 #country {
   position: fixed;
-  bottom: 38px;
-  left: 0;
-  background-color:  rgb(236, 236, 236); 
-  border: 1px solid rgb(226, 226, 226);
-  width: 98%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  bottom: 1rem;
+  padding-left: .75rem;
+  background-color:  inherit;
+ /* border: 1px solid rgb(226, 226, 226);*/
+  width: inherit;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
   /*padding-left: 2.3em;*/
   overflow: hidden; 
   display: inline-block;
   /*! vertical-align: middle; */
-  font: 15px;
+  /*font: 15px;*/
+}
+
+.lower {
+  background-color:  rgb(236, 236, 236); 
+  border: 1px solid rgb(226, 226, 226);
+  width: 100%;
 }
 
 .bottom-navigation {
@@ -94,15 +105,16 @@ li {
 }
 
 #sign-in {
-height: 40px; 
-width: 69px;
+height: /*40px*/2.5rem; 
+width: 5rem;
 color: white;
-font-weight: 800;
-font-size: 12px;
-background-color: blue; 
-padding: 10px 0;
-margin-left: 5px;
-margin-top: 5px;
+font-weight: 600;
+font-size: .8rem;
+background-color: #4285F4; 
+border-radius: .3rem;
+/*padding: 10px 0;*/
+/*margin-left: 5px;*/
+margin-top: 1rem;/*5px;*/
 border: none;
 display: inline;
 vertical-align: middle;
@@ -120,6 +132,7 @@ vertical-align: middle;
 
 #search {
   display: block;
+  height: 2rem;
   width: 100%;
   border-radius: 40px;
   border-color: rgb (226, 226, 226);
@@ -127,31 +140,31 @@ vertical-align: middle;
 
 
 #g-search {
-  width: 116px;
-  height: 30px;
-  margin-bottom: 10px;
+ /* width: 116px;*/;
+  height: 1.75rem/*30px*/;
+  margin-top: 1rem;
 }
 
 #lucky {
-   width: 123px;
-  height: 30px;
-  margin-bottom: 10px;
+   /*width: 123px;*/
+  height: 1.75rem/*30px*/;
+  margin-top: 1rem;
 }
 
 #language {
-font: 8px;
+/*font: 8px;*/
 /*width: 162px;
 height: 28px;*/
-margin-top: 15px;
+margin-top: 1rem;
 /*margin-left: 170px;*/
 }
 
 #french {
 color: blue;
-font: inherit;
+/*font: inherit;*/
 }
 
-
+/*not used
 #bottom-background {
   display: block;
   position: fixed;
@@ -159,10 +172,10 @@ font: inherit;
   background-color: rgb(145, 141, 141);
   height: 15px;
   width: auto;
-}
+}*/
 
-
+/*not used
 #logo-container {
   margin-left: 126px;
   margin-right: 126px;
- } 
+ } */

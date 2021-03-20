@@ -138,10 +138,10 @@ vertical-align: middle;
 
 #language {
 font: 8px;
-width: 162px;
-height: 28px;
+/*width: 162px;
+height: 28px;*/
 margin-top: 15px;
-margin-left: 170px;
+/*margin-left: 170px;*/
 }
 
 #french {

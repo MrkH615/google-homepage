@@ -67,6 +67,9 @@ li {
 
 .submit{
   border-radius: .5em;
+  border: none;
+  padding-left: .75rem;
+  padding-right: .75rem;
 }
 
 .bottom {

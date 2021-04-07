@@ -152,7 +152,7 @@ vertical-align: middle;
 
 #search-box {
   width: 80%;
-  height: 1.5rem;
+  height: 3rem;
   align-items: center;
   margin-bottom: 3rem;
 }
@@ -160,7 +160,7 @@ vertical-align: middle;
 
 #search {
   display: block;
-  height: 2rem;
+  height: 3rem;
   width: 100%;
   border-radius: 40px;
   border-color: rgb (226, 226, 226);
@@ -171,6 +171,7 @@ vertical-align: middle;
  /* width: 116px;*/
   height: 1.75rem;/*30px*/
   margin-top: 1rem;
+  margin-right: 1rem;
 }
 
 #lucky {

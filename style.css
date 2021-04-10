@@ -157,6 +157,17 @@ vertical-align: middle;
   margin-bottom: 3rem;
 }
 
+#input-container {
+  position: relative;
+}
+
+.material-icons {
+  position: absolute;
+  padding-top: .7rem;
+  padding-left: .5rem;
+  color: gray;
+
+}
 
 #search {
   display: block;
@@ -165,6 +176,7 @@ vertical-align: middle;
   border-radius: 40px;
   border-color: rgb (226, 226, 226);
   outline: none;
+  padding-left: 1rem;
 }
 
 

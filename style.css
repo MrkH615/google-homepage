@@ -3,7 +3,7 @@
 
 #main-container {
   font-family: 'Roboto', sans-serif;
-  font-size: 1vw;
+  font-size: 1rem;
   height: 98vh;
   display: flex;
   flex-direction: column;

@@ -1,6 +1,16 @@
 /* stylesheet for Mark's The Odin Project Google page project */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /*min-width: 1058px; /* min-width of 0 on body and main container allows whitespace in top and 
+  bottom divs to shrink, then buttons go onto 2 lines and 2nd button overtop of "Also available in"*/
+  /* ok to 677px;*/
+}
+
 #main-container {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
@@ -9,6 +19,13 @@
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
+  /*min-width: 1058px; /*window can shrink to 435 with scroll bars */
+  /* seems to be limited by lower L ul? */
+  /*scroll bars appear below minimum width;*/
+  box-sizing: border-box;
+  /*min-width only for main axis? source: 
+  https://stackoverflow.com/questions/36247140/why-dont-flex-items-shrink-past-content-size
+  */
 }
 
 li {
@@ -17,7 +34,8 @@ li {
 
 .top{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* whitespace seems to stay constant size when window reduced on x-axis*/
+  overflow: hidden; /* to try to remove scrollbars*/
 }
 
 .top .left {
@@ -26,7 +44,7 @@ li {
 
 ul {
   list-style: none;
-  width: 100%;
+  /*width: 100%;*/
 }
 
 li {
@@ -42,6 +60,7 @@ li {
   height: 25%; */
 }
 
+/* .left and .right not applied to .lower, so give .top-left values to .left only */
 .left {
  margin-left: 2rem;
 }
@@ -79,13 +98,17 @@ li {
   border: none;
   padding-left: .75rem;
   padding-right: .75rem;
-}
+} 
 
 .bottom {
   display: flex;
+  flex-direction: row; 
+  /* flex-flow: row wrap start of 2nd line is not-alligned with start of 1st*/
   justify-content: space-between;
   padding-top: 1rem;
   border-top: 1px solid rgb(200, 200, 200);
+  overflow: hidden;/* to try to remove scrollbars*/
+  /*width < 608 li on both sides too close*/
 }
 
 #country {
@@ -113,7 +136,7 @@ li {
 .lower {
   background-color:  rgb(236, 236, 236); 
   border: 1px solid rgb(226, 226, 226);
-  width: 100%;
+  /*width: 100%;*/
   padding-bottom: 1rem;
   color: rgb(120, 120, 120);
 }
@@ -148,8 +171,8 @@ display: inline;
 vertical-align: middle;
 }
 
-#center-conatiner {
-  position: relative;
+#center { 
+  position: relative; /* because #input-container's position is relative ???*/
 }
 
 #search-box {
@@ -174,7 +197,7 @@ vertical-align: middle;
 #search {
   display: block;
   height: 3rem;
-  width: 100%;
+  width: 100%; /*min-width breaks horizontal centering */
   border-radius: 40px;
   border-color: rgb (226, 226, 226);
   outline: none;
@@ -203,6 +226,7 @@ vertical-align: middle;
 height: 28px;*/
 margin-top: 2rem;
 /*margin-left: 170px;*/
+/*overlaps search buttons width of window < 669px*/
 }
 
 #french {

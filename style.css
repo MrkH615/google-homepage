@@ -110,6 +110,13 @@ li {
   overflow: hidden;/* to try to remove scrollbars*/
   /*width < 608 li on both sides too close*/
 }
+/*
+@media screen and (max-width: 608px) {
+  .bottom {
+    justify-content: center;
+  }
+}
+*/
 
 #country {
   padding-left: .9rem;
@@ -176,7 +183,7 @@ vertical-align: middle;
 }
 
 #search-box {
-  width: 80%;
+  width: 25rem;/*80%;*/
   height: 3rem;
   align-items: center;
   margin-bottom: 3rem;
@@ -225,6 +232,7 @@ vertical-align: middle;
 /*width: 162px;
 height: 28px;*/
 margin-top: 2rem;
+font-size: 0.9rem;
 /*margin-left: 170px;*/
 /*overlaps search buttons width of window < 669px*/
 }

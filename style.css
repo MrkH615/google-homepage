@@ -110,13 +110,33 @@ li {
   overflow: hidden;/* to try to remove scrollbars*/
   /*width < 608 li on both sides too close*/
 }
-/*
+
 @media screen and (max-width: 608px) {
-  .bottom {
-    justify-content: center;
+   .bottom {
+     flex-direction: column;
+    /*align-content: center;*/
+   }
+
+  .bottom .left{
+    /*justify-content: center;*/
+   /* margin-left: 7rem;
+    width: 80%;*/
+    margin: auto;
+  }
+
+  .bottom .right {
+    /*justify-content: center;*/
+    /*margin-top: 2rem;*/
+    /*margin-left: -10rem;
+    margin-right: 6rem;
+    width: 80%;*/
+    
+    margin-right: 0;
+    margin: auto;
+    margin-top: 1rem;
   }
 }
-*/
+
 
 #country {
   padding-left: .9rem;

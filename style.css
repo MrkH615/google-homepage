@@ -5,12 +5,6 @@
   box-sizing: border-box;
 }
 
-body {
-  /*min-width: 1058px; /* min-width of 0 on body and main container allows whitespace in top and 
-  bottom divs to shrink, then buttons go onto 2 lines and 2nd button overtop of "Also available in"*/
-  /* ok to 677px;*/
-}
-
 #main-container {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
@@ -70,9 +64,13 @@ li {
   margin-right: 2rem;
 } 
 
+
 .top .left {
-  margin-top: 1.3rem;
+  margin-top: 1.15rem;
+  /*padding-bottom: 3rem;  no effect? -- select ul instead */
+ /*  height: 3.5rem; text is at top of div, breaks with resizing*/
 }
+
 
 #center {
   position: relative;

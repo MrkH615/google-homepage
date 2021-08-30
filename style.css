@@ -13,13 +13,7 @@
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
-  /*min-width: 1058px; /*window can shrink to 435 with scroll bars */
-  /* seems to be limited by lower L ul? */
-  /*scroll bars appear below minimum width;*/
   box-sizing: border-box;
-  /*min-width only for main axis? source: 
-  https://stackoverflow.com/questions/36247140/why-dont-flex-items-shrink-past-content-size
-  */
 }
 
 li {
@@ -28,17 +22,16 @@ li {
 
 .top{
   display: flex;
-  justify-content: space-between; /* whitespace seems to stay constant size when window reduced on x-axis*/
+  justify-content: space-between; 
   overflow: hidden; /* to try to remove scrollbars*/
 }
 
-.top .left {
+/*.top .left {
   margin-top: 1.3rem;
-}
+}*/
 
 ul {
   list-style: none;
-  /*width: 100%;*/
 }
 
 li {
@@ -50,8 +43,6 @@ li {
   display: inline-block;
   position: relative;
   vertical-align: middle;
-  /*width: 25%;
-  height: 25%; */
 }
 
 /* .left and .right not applied to .lower, so give .top-left values to .left only */
@@ -66,9 +57,7 @@ li {
 
 
 .top .left {
-  margin-top: 1.15rem;
-  /*padding-bottom: 3rem;  no effect? -- select ul instead */
- /*  height: 3.5rem; text is at top of div, breaks with resizing*/
+  margin-top: 0.9rem;/*1.15rem;*/ /*to align top-left menu with top right-menu*/
 }
 
 
@@ -86,7 +75,6 @@ li {
 
 #button-container {
   text-align: center;
-  /*margin-bottom: 1rem;*/
   margin-top: 1rem;
   
 }
@@ -101,34 +89,22 @@ li {
 .bottom {
   display: flex;
   flex-direction: row; 
-  /* flex-flow: row wrap start of 2nd line is not-alligned with start of 1st*/
   justify-content: space-between;
   padding-top: 1rem;
   border-top: 1px solid rgb(200, 200, 200);
   overflow: hidden;/* to try to remove scrollbars*/
-  /*width < 608 li on both sides too close*/
 }
 
 @media screen and (max-width: 608px) {
    .bottom {
      flex-direction: column;
-    /*align-content: center;*/
    }
 
   .bottom .left{
-    /*justify-content: center;*/
-   /* margin-left: 7rem;
-    width: 80%;*/
     margin: auto;
   }
 
-  .bottom .right {
-    /*justify-content: center;*/
-    /*margin-top: 2rem;*/
-    /*margin-left: -10rem;
-    margin-right: 6rem;
-    width: 80%;*/
-    
+  .bottom .right {  
     margin-right: 0;
     margin: auto;
     margin-top: 1rem;
@@ -141,22 +117,6 @@ li {
   margin-top: 1rem;
   padding-bottom: 1rem;
 }
-/*
-#country {
-  position: fixed;
-  bottom: 1rem;
-  padding-left: .75rem;
-  background-color:  inherit;
- /* border: 1px solid rgb(226, 226, 226);*/
-  /*width: inherit;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-  /*padding-left: 2.3em;*/
- /* overflow: hidden; 
-  display: inline-block;
-  /*! vertical-align: middle; */
-  /*font: 15px;*/
-/*}*/
 
 .lower {
   background-color:  rgb(236, 236, 236); 
@@ -166,42 +126,27 @@ li {
   color: rgb(120, 120, 120);
 }
 
-/*
-.bottom-navigation {
-    position: absolute;   
-    bottom: 0;
-    background-color:  rgb(236, 236, 236); 
-    width: 98%;
-    overflow: hidden;  
-    padding-top: 20px;
-    margin-left: 0;
-    border: 1px solid rgb(226, 226, 226);
-    padding-right: 1.75em; 
-}
-*/
-
 #sign-in {
-height: /*40px*/2.5rem; 
-width: 5rem;
-color: white;
-font-weight: 600;
-font-size: .8rem;
-background-color: #4285F4; 
-border-radius: .3rem;
-/*padding: 10px 0;*/
-/*margin-left: 5px;*/
-margin-top: 1rem;/*5px;*/
-border: none;
-display: inline;
-vertical-align: middle;
+
+  height: 2rem;/*2.5rem; */
+  width: 6rem;/*5rem;*/
+  color: white;
+  font-weight: 600;
+  font-size: .8rem;
+  background-color: #4285F4; 
+  border-radius: .3rem;
+  margin-top: 0.5rem;/*1rem;*/ /* button seems to effect margin-top of entire top-right ul */
+  border: none;
+  display: inline;
+  vertical-align: middle;
 }
 
 #center { 
-  position: relative; /* because #input-container's position is relative ???*/
+  position: relative; 
 }
 
 #search-box {
-  width: 25rem;/*80%;*/
+  width: 25rem;
   height: 3rem;
   align-items: center;
   margin-bottom: 3rem;
@@ -233,45 +178,21 @@ vertical-align: middle;
 
 
 #g-search {
- /* width: 116px;*/
-  height: 1.75rem;/*30px*/
+  height: 1.75rem;
   margin-top: 1rem;
   margin-right: 1rem;
 }
 
 #lucky {
-   /*width: 123px;*/
-  height: 1.75rem/*30px*/;
+  height: 1.75rem;
   margin-top: 1rem;
 }
 
 #language {
-/*font: 8px;*/
-/*width: 162px;
-height: 28px;*/
 margin-top: 2rem;
 font-size: 0.9rem;
-/*margin-left: 170px;*/
-/*overlaps search buttons width of window < 669px*/
 }
 
 #french {
 color: blue;
-/*font: inherit;*/
 }
-
-/*not used
-#bottom-background {
-  display: block;
-  position: fixed;
-  bottom: 0;
-  background-color: rgb(145, 141, 141);
-  height: 15px;
-  width: auto;
-}*/
-
-/*not used
-#logo-container {
-  margin-left: 126px;
-  margin-right: 126px;
- } */

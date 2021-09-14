@@ -56,8 +56,8 @@ li {
 } 
 
 
-.top .left {
-  margin-top: 0.9rem;/*1.15rem;*/ /*to align top-left menu with top right-menu*/
+.top .left { /*without this goes all the way to top of viewport */
+  margin-top: 1.45rem;/*0.9rem;/*1.15rem;*/ /*to align top-left menu with top right-menu*/
 }
 
 
@@ -129,16 +129,16 @@ li {
 #sign-in {
 
   height: 2rem;/*2.5rem; */
-  width: 6rem;/*5rem;*/
+  width: /*6rem;  more like original but breaks menu when viewport nears min width*/5rem;
   color: white;
   font-weight: 600;
   font-size: .8rem;
   background-color: #4285F4; 
   border-radius: .3rem;
-  margin-top: 0.5rem;/*1rem;*/ /* button seems to effect margin-top of entire top-right ul */
+  margin-top: /*0.5rem; 2 top menus top margin looks very different with 0.5rem */1rem; /* button seems to effect margin-top of entire top-right ul */
   border: none;
   display: inline;
-  vertical-align: middle;
+  /*vertical-align: middle;*/ /* button seems more vertically aligned without this*/
 }
 
 #center { 

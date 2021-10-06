@@ -23,12 +23,8 @@ li {
 .top{
   display: flex;
   justify-content: space-between; 
-  overflow: hidden; /* to try to remove scrollbars*/
+  overflow: hidden; 
 }
-
-/*.top .left {
-  margin-top: 1.3rem;
-}*/
 
 ul {
   list-style: none;
@@ -38,28 +34,23 @@ li {
   display: inline;
 }
 
-
 #app-buttons {  
   display: inline-block;
   position: relative;
   vertical-align: middle;
 }
 
-/* .left and .right not applied to .lower, so give .top-left values to .left only */
 .left {
  margin-left: 2rem;
 }
-
 
 .right {
   margin-right: 2rem;
 } 
 
-
-.top .left { /*without this goes all the way to top of viewport */
-  margin-top: 1.45rem;/*0.9rem;/*1.15rem;*/ /*to align top-left menu with top right-menu*/
+.top .left { 
+  margin-top: 1.45rem;
 }
-
 
 #center {
   position: relative;
@@ -70,8 +61,6 @@ li {
   align-items: center;
   width: 50%;
 }
-
-
 
 #button-container {
   text-align: center;
@@ -92,7 +81,7 @@ li {
   justify-content: space-between;
   padding-top: 1rem;
   border-top: 1px solid rgb(200, 200, 200);
-  overflow: hidden;/* to try to remove scrollbars*/
+  overflow: hidden;
 }
 
 @media screen and (max-width: 608px) {
@@ -121,24 +110,24 @@ li {
 .lower {
   background-color:  rgb(236, 236, 236); 
   border: 1px solid rgb(226, 226, 226);
-  /*width: 100%;*/
   padding-bottom: 1rem;
   color: rgb(120, 120, 120);
 }
 
 #sign-in {
 
-  height: 2rem;/*2.5rem; */
-  width: /*6rem;  more like original but breaks menu when viewport nears min width*/5rem;
+  height: 2rem;
+  width: 5rem;
   color: white;
   font-weight: 600;
   font-size: .8rem;
   background-color: #4285F4; 
   border-radius: .3rem;
-  margin-top: /*0.5rem; 2 top menus top margin looks very different with 0.5rem */1rem; /* button seems to effect margin-top of entire top-right ul */
+  margin-top: 1rem; 
+  /* button seems to effect margin-top of entire top-right ul */
   border: none;
   display: inline;
-  /*vertical-align: middle;*/ /* button seems more vertically aligned without this*/
+  
 }
 
 #center { 
@@ -175,7 +164,6 @@ li {
   font-size: 1.5rem;
   color: #3b3a39;
 }
-
 
 #g-search {
   height: 1.75rem;
